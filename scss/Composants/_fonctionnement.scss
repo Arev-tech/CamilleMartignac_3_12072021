@@ -1,5 +1,5 @@
 .fonctionnement{
-    width: 100%;
+    width: auto;
     margin: $margin-fonctionnement;
 
     > h2{
@@ -15,21 +15,6 @@
 
         .fas{
             @include icon-fct;
-        }
-
-        &::before{
-            counter-increment: compteListe 1;
-            content: counter(compteListe) " ";
-            background: #9356dc;
-            height: 1.5rem;
-            width: 1.5rem;
-            border-radius: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            position: absolute;
-            left: -.75rem;
         }
     }
 }
