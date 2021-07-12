@@ -1,0 +1,17 @@
+.place{
+    @include centrer;
+    background-color: $clr-place;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0 0 0;
+    justify-content: center;
+    padding: 30px 0px;
+    
+    input{
+        border: none;
+        background-color: $clr-place;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+    }
+}

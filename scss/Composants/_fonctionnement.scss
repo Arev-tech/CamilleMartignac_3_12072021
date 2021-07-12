@@ -1,0 +1,20 @@
+.fonctionnement{
+    width: 100%;
+    margin: $margin-fonctionnement;
+
+    > h2{
+        margin: $margin-fonctionnement-step;
+    }
+
+    &-step{
+        width: auto;
+        @include flexfonctionnement;
+        background-color: $clr-fct-step;
+        border-radius: $border-radius-fct;
+        margin: $margin-fonctionnement-step;
+
+        .fas{
+            @include icon-fct;
+        }
+    }
+}

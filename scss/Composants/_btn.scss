@@ -1,0 +1,6 @@
+.btn{
+    @include btn-card;
+    @include degrade;
+    font-size: $size-explore;
+    cursor: pointer;
+}

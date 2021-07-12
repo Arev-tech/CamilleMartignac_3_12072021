@@ -1,0 +1,11 @@
+footer{
+    width: auto;
+    background-color: $clr-footer;
+    color: $clr-white;
+    height: auto;
+    padding: $margin-fonctionnement-step;
+
+    .logo{
+        font-family: 'Shrikhand', 'Roboto', sans-serif;
+    }
+}

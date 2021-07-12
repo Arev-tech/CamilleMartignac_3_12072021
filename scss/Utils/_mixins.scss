@@ -1,0 +1,29 @@
+@mixin btn-card {
+    color: $clr-white;
+    background: $clr-primary;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    right: 1%;
+    top: 5%;
+}
+
+@mixin centrer{
+    width: 100%;
+    text-align: center;
+}
+
+@mixin degrade{
+    background: linear-gradient($clr-secondary,$clr-primary);
+}
+
+@mixin flexfonctionnement{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin icon-fct{
+    padding: 0 20px;
+}
