@@ -27,3 +27,13 @@
 @mixin icon-fct{
     padding: 0 20px;
 }
+
+@mixin a-footer{
+    color: $clr-white;
+    text-decoration: none;
+}
+
+@mixin a-restaurants{
+    color: black;
+    text-decoration: none;
+}

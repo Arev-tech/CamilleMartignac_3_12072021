@@ -4,8 +4,19 @@ footer{
     color: $clr-white;
     height: auto;
     padding: $margin-fonctionnement-step;
+}
 
-    .logo{
-        font-family: 'Shrikhand', 'Roboto', sans-serif;
+.logo{
+    font-family: 'Shrikhand', 'Roboto', sans-serif;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+
+    > a{
+        @include a-footer;
     }
 }
