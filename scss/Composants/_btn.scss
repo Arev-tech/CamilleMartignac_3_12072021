@@ -1,4 +1,5 @@
 .btn{
+    text-align: center;
     @include btn-card;
     @include degrade;
     font-size: $size-explore;
