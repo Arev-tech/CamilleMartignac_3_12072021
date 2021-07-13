@@ -24,6 +24,11 @@
     align-items: center;
 }
 
+@mixin flexrestaurant{
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin icon-fct{
     padding: 0 20px;
 }
