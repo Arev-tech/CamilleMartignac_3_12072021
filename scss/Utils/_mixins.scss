@@ -8,6 +8,11 @@
     top: 5%;
 }
 
+@mixin header{
+    text-decoration: none;
+    color: #000;
+}
+
 @mixin centrer{
     width: 100%;
     text-align: center;

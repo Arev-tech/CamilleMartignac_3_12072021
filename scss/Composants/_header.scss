@@ -1,6 +1,5 @@
 h1{
-    width: 100%;
-    text-align: center;
+    @include centrer;
     padding: 20px 0;
 }
 

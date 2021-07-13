@@ -25,20 +25,51 @@ h2, h1 {
   margin: 0;
 }
 
+.headermenu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+}
+.headermenu .fa-arrow-left {
+  width: 42%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin: 0 0 0 30px;
+}
+.headermenu h1 {
+  width: 58%;
+  display: flex;
+  text-align: center;
+}
+
 .menu {
+  margin: 400px 0;
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
 }
-
+.menu-titre {
+  display: flex;
+  flex-direction: row;
+}
+.menu-titre h1 {
+  text-align: left;
+}
 .containeur {
   display: flex;
   flex-direction: column;
 }
+.containeur h2 {
+  padding: 0 20px;
+}
 .containeur-choix {
   border-radius: 30px;
   background-color: #fff;
-  margin: 20px 10px;
+  margin: 20px 20px;
   padding: 20px;
   display: grid;
   grid-template-columns: 80% 10% 10%;
