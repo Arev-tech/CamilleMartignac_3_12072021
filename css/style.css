@@ -10,6 +10,11 @@ p {
   font-weight: lighter;
 }
 
+span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 html {
   width: 100%;
   height: auto;
@@ -31,6 +36,10 @@ h2, h1 {
   width: 100%;
   text-decoration: none;
   color: #000;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  z-index: 3;
 }
 .headermenu .fa-arrow-left {
   width: 42%;
@@ -45,20 +54,36 @@ h2, h1 {
   text-align: center;
 }
 
+.photo-restaurant {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+}
+.photo-restaurantimg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .menu {
-  margin: 400px 0;
+  margin: 400px 0 0 130px;
   display: flex;
   flex-direction: column;
+  width: 80%;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
+  position: relative;
+  top: 80px;
 }
 .menu-titre {
   display: flex;
   flex-direction: row;
+  padding: 30px;
 }
 .menu-titre h1 {
   text-align: left;
 }
+
 .containeur {
   display: flex;
   flex-direction: column;
