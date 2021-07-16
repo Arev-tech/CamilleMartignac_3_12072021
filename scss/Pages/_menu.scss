@@ -65,37 +65,37 @@
     padding: 0 0 0 20px;
     overflow: hidden;
     margin: 20px;
-    
+      
     &-titre{
-      display: flex;
-      width: 50%;
-      flex-direction: column;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
     }
-    
+        
     &-prix{
-      display: flex;
-      width: 50%;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-items: center;
-      font-weight: bold;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    }
+        
+    &-validate{
+    margin: -16px -120px -16px 70px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;   
+    color: $clr-white; 
+    background-color: $clr-tertiary;
     }
     
-    &-validate{
-      margin: -16px -120px -16px 70px;
-      width: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition-duration: .5s;   
-      color: $clr-white; 
-      background-color: $clr-tertiary;
-    }
-  
-      &:hover &-validate{
+    &:hover &-validate{
         margin: 0 0 0 20px;
         transition: 0.5s;
         border-radius: 0 20px 20px 0;
     }
-  
+    
 }

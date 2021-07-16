@@ -136,6 +136,7 @@ h1 {
   width: 100%;
   text-align: center;
   padding: 20px 0;
+  font-size: 40px;
 }
 
 header {
@@ -159,7 +160,6 @@ header {
   right: 1%;
   top: 5%;
   background: linear-gradient(#FF79DA, #9356DC);
-  font-size: 18px;
   cursor: pointer;
 }
 
