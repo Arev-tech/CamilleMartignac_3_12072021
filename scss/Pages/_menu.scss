@@ -13,11 +13,8 @@
         width: 42%;
         display: flex;
         align-items: center;
-        font-size: $size-arrow;
+        font-size: $size-icon;
         margin: $margin-arrow;
-
-        &::before{
-        }
     }
 
     h1{
@@ -60,37 +57,45 @@
     }
 }
 
-.containeur{
+.containeur-choix{
     display: flex;
-    flex-direction: column;
-
-    h2{
-        padding: 0 20px;
+    flex-direction: row;
+    border-radius: 30px;
+    background-color: $clr-white;
+    padding: 0 0 0 20px;
+    overflow: hidden;
+    margin: 20px;
+    
+    &-titre{
+      display: flex;
+      width: 50%;
+      flex-direction: column;
     }
-
-    &-choix{
-        border-radius: 30px;
-        background-color: $clr-white;
-        margin: 20px 20px;
-        padding: 20px;
-        display: grid;
-        grid-template-columns: 80% 10% 10%;
-        grid-template-rows: 50% 50%;
-
-        h4{
-            grid-area: 1 / 1 / 2 / 2;
-        }
-
-        p{
-            grid-area: 2 / 1 / 3 / 2;
-        }
-
-        span{
-            grid-area: 1 / 3 / 3 / 4;
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-        }
+    
+    &-prix{
+      display: flex;
+      width: 50%;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      font-weight: bold;
     }
+    
+    &-validate{
+      margin: -16px -120px -16px 70px;
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-duration: .5s;   
+      color: $clr-white; 
+      background-color: $clr-tertiary;
+    }
+  
+      &:hover &-validate{
+        margin: 0 0 0 20px;
+        transition: 0.5s;
+        border-radius: 0 20px 20px 0;
+    }
+  
 }

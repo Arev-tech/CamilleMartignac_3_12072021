@@ -4,7 +4,6 @@ h1, h6, h3 {
 
 body, html, button {
   font-family: "Roboto", sans-serif;
-  font-size: x-large;
 }
 
 p {
@@ -31,6 +30,16 @@ h2, h1 {
   margin: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  * {
+    font-size: xxx-large;
+  }
+}
+@media screen and (min-width: 1024px) {
+  * {
+    font-size: x-large;
+  }
+}
 .headermenu {
   display: flex;
   flex-direction: row;
@@ -85,34 +94,42 @@ h2, h1 {
   text-align: left;
 }
 
-.containeur {
-  display: flex;
-  flex-direction: column;
-}
-.containeur h2 {
-  padding: 0 20px;
-}
 .containeur-choix {
+  display: flex;
+  flex-direction: row;
   border-radius: 30px;
   background-color: #fff;
-  margin: 20px 20px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 80% 10% 10%;
-  grid-template-rows: 50% 50%;
+  padding: 0 0 0 20px;
+  overflow: hidden;
+  margin: 20px;
 }
-.containeur-choix h4 {
-  grid-area: 1/1/2/2;
-}
-.containeur-choix p {
-  grid-area: 2/1/3/2;
-}
-.containeur-choix span {
-  grid-area: 1/3/3/4;
+.containeur-choix-titre {
   display: flex;
-  align-content: center;
-  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+}
+.containeur-choix-prix {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
+  font-weight: bold;
+}
+.containeur-choix-validate {
+  margin: -16px -120px -16px 70px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  color: #fff;
+  background-color: #99E2D0;
+}
+.containeur-choix:hover .containeur-choix-validate {
+  margin: 0 0 0 20px;
+  transition: 0.5s;
+  border-radius: 0 20px 20px 0;
 }
 
 h1 {
@@ -227,11 +244,11 @@ header {
   justify-content: center;
 }
 .card-txt-coeur .far {
-  font-size: 40px;
+  font-size: 30px;
 }
 .card-txt-coeur .fas {
   display: none;
-  font-size: 40px;
+  font-size: 30px;
 }
 .card-txt-coeur:hover .fas {
   animation: fill 0.5s ease-in-out;
