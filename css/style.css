@@ -230,7 +230,7 @@ ol {
   margin: 20px 10px;
 }
 .fonctionnement-step {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -238,12 +238,15 @@ ol {
   background-color: #f6f6f6;
   border-radius: 30px;
   margin: 20px 10px;
-  padding: 20px;
+  padding: 50px 30px;
   margin: auto;
   margin-top: 30px;
 }
 .fonctionnement-step .fas {
   padding: 0 10px;
+}
+.fonctionnement-step > .fa-store {
+  color: #9356DC;
 }
 .fonctionnement-step::before {
   counter-increment: compteListe 1;
@@ -257,7 +260,7 @@ ol {
   align-items: center;
   color: white;
   position: absolute;
-  left: 130px;
+  left: 75px;
 }
 
 .restaurants {
@@ -301,12 +304,11 @@ ol {
   display: flex;
   justify-content: center;
 }
-.card-txt-coeur .far {
+.card-txt-coeur .fa {
   font-size: 30px;
 }
 .card-txt-coeur .fas {
   display: none;
-  font-size: 30px;
 }
 .card-txt-coeur:hover .fas {
   animation: fill 0.5s ease-in-out;

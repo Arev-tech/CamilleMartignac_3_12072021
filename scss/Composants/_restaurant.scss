@@ -39,13 +39,13 @@
             display: flex;
             justify-content: center;
 
-            .far{
-                font-size:$size-icon;
+            .fa{
+                font-size: $size-icon
+                
             }
 
             .fas{
                 display: none;
-                font-size:$size-icon;
             }
 
             &:hover{

@@ -15,7 +15,7 @@ ol{
     }
     
     &-step{
-        width: 70%;
+        width: 80%;
         @include flexfonctionnement;
         background-color: $clr-fct-step;
         border-radius: $border-radius-fct;
@@ -26,6 +26,10 @@ ol{
 
         .fas{
             @include icon-fct;
+        }
+
+        >.fa-store{
+            color: $clr-primary;
         }
 
         &::before {
@@ -40,7 +44,7 @@ ol{
             align-items: center;
             color: white;
             position: absolute;
-            left: 130px;
+            left: 75px;
         }
     }
 }
