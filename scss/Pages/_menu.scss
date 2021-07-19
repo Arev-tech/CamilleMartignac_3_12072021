@@ -27,7 +27,6 @@
 .photo-restaurant{
     position: fixed;
     top: 0;
-    height: 100vh;
 
     &img{
         height: 100%;
@@ -37,22 +36,37 @@
 }
 
 .menu{
-    margin: 400px 0 0 130px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
     width: 80%;
+    height: 100%;
     background-color: #f6f6f6;
     border-radius: 40px 40px 0 0;
     position: relative;
     top: 80px;    
 
-    &-titre{
+    >.titre{
         display: flex;
         flex-direction: row;
-        padding: 30px;
+        align-items: center;
 
-        h1{
+        >h1{
             text-align: left;
+        }
+    }
+
+    &-btn{
+        margin: 20px;
+        @include btn-card;
+        @include degrade;
+        width: 50%;
+        margin: auto;
+
+        &:hover{
+            filter: brightness(1.2);
         }
     }
 }
@@ -62,14 +76,14 @@
     flex-direction: row;
     border-radius: 30px;
     background-color: $clr-white;
-    padding: 0 0 0 20px;
     overflow: hidden;
-    margin: 20px;
+    margin: 20px 0;
       
     &-titre{
     display: flex;
     width: 50%;
     flex-direction: column;
+    padding: 10px;
     }
         
     &-prix{
@@ -96,6 +110,7 @@
         margin: 0 0 0 20px;
         transition: 0.5s;
         border-radius: 0 20px 20px 0;
+        cursor: pointer;
     }
     
 }

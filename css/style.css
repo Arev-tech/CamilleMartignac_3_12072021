@@ -26,7 +26,7 @@ body {
   height: auto;
 }
 
-h2, h1 {
+h2, h1, h4, p {
   margin: 0;
 }
 
@@ -67,7 +67,6 @@ h2, h1 {
 .photo-restaurant {
   position: fixed;
   top: 0;
-  height: 100vh;
 }
 .photo-restaurantimg {
   height: 100%;
@@ -76,22 +75,42 @@ h2, h1 {
 }
 
 .menu {
-  margin: 400px 0 0 130px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 250px;
   display: flex;
   flex-direction: column;
   width: 80%;
+  height: 100%;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   position: relative;
   top: 80px;
 }
-.menu-titre {
+.menu > .titre {
   display: flex;
   flex-direction: row;
-  padding: 30px;
+  align-items: center;
 }
-.menu-titre h1 {
+.menu > .titre > h1 {
   text-align: left;
+}
+.menu-btn {
+  margin: 20px;
+  color: #fff;
+  background: #9356DC;
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+  right: 1%;
+  top: 5%;
+  cursor: pointer;
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 50%;
+  margin: auto;
+}
+.menu-btn:hover {
+  filter: brightness(1.2);
 }
 
 .containeur-choix {
@@ -99,14 +118,14 @@ h2, h1 {
   flex-direction: row;
   border-radius: 30px;
   background-color: #fff;
-  padding: 0 0 0 20px;
   overflow: hidden;
-  margin: 20px;
+  margin: 20px 0;
 }
 .containeur-choix-titre {
   display: flex;
   width: 50%;
   flex-direction: column;
+  padding: 10px;
 }
 .containeur-choix-prix {
   display: flex;
@@ -130,6 +149,7 @@ h2, h1 {
   margin: 0 0 0 20px;
   transition: 0.5s;
   border-radius: 0 20px 20px 0;
+  cursor: pointer;
 }
 
 h1 {
@@ -149,6 +169,12 @@ header {
   background-color: #f6f6f6;
   padding: 30px 0;
 }
+.speech > h2 {
+  margin: 10px;
+}
+.speech > p {
+  margin: 10px;
+}
 
 .btn {
   text-align: center;
@@ -159,8 +185,11 @@ header {
   border-radius: 30px;
   right: 1%;
   top: 5%;
-  background: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.btn:hover {
+  filter: brightness(1.2);
 }
 
 .place {
