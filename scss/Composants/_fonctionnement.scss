@@ -1,20 +1,47 @@
+ol{
+    list-style: decimal;
+}
+
 .fonctionnement{
+    display: flex;
+    flex-direction: column;
     width: auto;
     margin: $margin-fonctionnement;
+    list-style: none;
+    counter-reset: compteListe;
 
     > h2{
         margin: $margin-fonctionnement-step;
     }
-
+    
     &-step{
-        width: auto;
+        width: 70%;
         @include flexfonctionnement;
         background-color: $clr-fct-step;
         border-radius: $border-radius-fct;
         margin: $margin-fonctionnement-step;
+        padding: $padding-fonctionnement;
+        margin: auto;
+        margin-top: 30px;
 
         .fas{
             @include icon-fct;
         }
+
+        &::before {
+            counter-increment: compteListe 1;
+            content: counter(compteListe) " ";
+            background: $clr-primary;
+            height: 70px;
+            width: 70px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            left: 130px;
+        }
     }
 }
+

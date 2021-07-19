@@ -1,3 +1,7 @@
+@counter-style compteListe {
+  system: numeric;
+  symbols: "1" "2" "3";
+}
 h1, h6, h3 {
   font-family: "Shrikhand", "Roboto", sans-serif;
 }
@@ -31,7 +35,7 @@ h2, h1, h4, p {
 }
 
 @media screen and (max-width: 1023px) {
-  * {
+  *, button {
     font-size: xxx-large;
   }
 }
@@ -100,8 +104,8 @@ h2, h1, h4, p {
   color: #fff;
   background: #9356DC;
   border: none;
-  padding: 20px;
-  border-radius: 30px;
+  padding: 25px;
+  border-radius: 80px;
   right: 1%;
   top: 5%;
   cursor: pointer;
@@ -170,10 +174,10 @@ header {
   padding: 30px 0;
 }
 .speech > h2 {
-  margin: 10px;
+  margin: 30px;
 }
 .speech > p {
-  margin: 10px;
+  margin: 30px;
 }
 
 .btn {
@@ -181,8 +185,8 @@ header {
   color: #fff;
   background: #9356DC;
   border: none;
-  padding: 20px;
-  border-radius: 30px;
+  padding: 25px;
+  border-radius: 80px;
   right: 1%;
   top: 5%;
   cursor: pointer;
@@ -210,25 +214,50 @@ header {
   text-align: center;
 }
 
+ol {
+  list-style: decimal;
+}
+
 .fonctionnement {
+  display: flex;
+  flex-direction: column;
   width: auto;
   margin: 30px 0px;
+  list-style: none;
+  counter-reset: compteListe;
 }
 .fonctionnement > h2 {
-  margin: 20px;
+  margin: 20px 10px;
 }
 .fonctionnement-step {
-  width: auto;
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #f6f6f6;
-  border-radius: 20px;
-  margin: 20px;
+  border-radius: 30px;
+  margin: 20px 10px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
 }
 .fonctionnement-step .fas {
-  padding: 0 20px;
+  padding: 0 10px;
+}
+.fonctionnement-step::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: #9356DC;
+  height: 70px;
+  width: 70px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: 130px;
 }
 
 .restaurants {
@@ -297,7 +326,7 @@ footer {
   background-color: #353535;
   color: #fff;
   height: auto;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 .logo {
