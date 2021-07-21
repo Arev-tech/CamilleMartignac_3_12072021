@@ -1,0 +1,29 @@
+.card-txt-coeur{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    .fas{
+        display: none;
+
+    }
+    @media screen and (min-width: 1024px){
+        zoom: 150%;
+    }
+    
+    &:hover, &:active{
+        animation: opacityOn 0.5s ease-in-out;
+
+        .fas{
+            display: block;
+            background:linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:transparent;
+        }
+
+        .far{
+            display: none;
+        }
+    }
+}

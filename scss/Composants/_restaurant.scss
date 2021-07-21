@@ -65,38 +65,5 @@
         &-name{
             width: 90%;
         }
-
-        &-coeur{
-            width: 10%;
-            display: flex;
-            justify-content: center;
-            cursor: pointer;
-
-            .fa{
-                font-size: xxx-large;
-            }
-
-            .fas{
-                display: none;
-            }
-
-            @media screen and (min-width: 1024px){
-                zoom: 150%;
-            }
-            
-            &:hover{
-                .fas{
-                    display: block;
-                    opacity: 1;
-                    background:linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color:transparent;
-                }
-
-                .far{
-                    display: none;
-                }
-            }
-        }
     }
-}
+}  

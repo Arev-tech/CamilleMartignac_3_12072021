@@ -3,10 +3,7 @@
     flex-direction: row;
     width: 100%;
     @include header;
-    position: fixed;
-    top: 0px;
     background-color: #fff;
-    z-index: 3;
     
 
     .fa-arrow-left{
@@ -25,28 +22,28 @@
 }
 
 .photo-restaurant{
-    position: fixed;
+    position: absolute;
     top: 98px;
     height: auto;
 
     &-menu{
         width: 100%;
+        height: auto;
         object-fit: cover;
     }
 }
 
 .menu{
     padding: 30px;
-    margin: auto;
-    margin-top: 200px;
+    margin: 500px 0 100px 0;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: auto;
     height: auto;
     background-color: #f6f6f6;
     border-radius: 40px;
     position: relative;
-    top: 80px;    
+    top: 80px;
 
     >.titre{
         display: flex;
@@ -77,6 +74,7 @@
         animation-fill-mode: both;
         cursor: pointer;
         box-shadow: $shadow;
+        transform: scale(1.015);
     
         
         &-titre{
@@ -142,8 +140,5 @@
         }
         &-10{
             animation-delay: 2.7s;
-        }
-        &-2{
-            animation-delay: 0.2s;
         }
 }
