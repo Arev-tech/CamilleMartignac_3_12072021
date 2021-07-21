@@ -73,14 +73,17 @@
             cursor: pointer;
 
             .fa{
-                font-size: $size-icon
-                
+                font-size: xxx-large;
             }
 
             .fas{
                 display: none;
             }
 
+            @media screen and (min-width: 1024px){
+                zoom: 150%;
+            }
+            
             &:hover{
                 .fas{
                     animation: fill 0.5s ease-in-out;

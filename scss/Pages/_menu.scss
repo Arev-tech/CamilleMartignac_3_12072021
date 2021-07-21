@@ -60,6 +60,9 @@
 }
 
 .containeur{
+    >h2{
+        margin: 20px;
+    }
 
     &-choix{
         display: flex;

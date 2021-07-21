@@ -8,13 +8,22 @@ footer{
 
 .logo{
     font-family: 'Shrikhand', 'Roboto', sans-serif;
+    text-align: center;
 }
 
 
 .footer{
-    display: flex;
-    flex-direction: column;
-    line-height: 200%;
+    @media screen and (max-width: 1023px){
+        display: flex;
+        flex-direction: column;
+        line-height: 200%;
+    }
+
+    @media screen and (min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
     > a{
         @include a-footer;
