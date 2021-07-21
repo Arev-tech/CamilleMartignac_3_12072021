@@ -26,10 +26,10 @@
 
 .photo-restaurant{
     position: fixed;
-    top: 0;
+    top: 98px;
+    height: auto;
 
-    &img{
-        height: 100%;
+    &-menu{
         width: 100%;
         object-fit: cover;
     }
@@ -38,13 +38,13 @@
 .menu{
     padding: 30px;
     margin: auto;
-    margin-top: 250px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 100%;
+    height: auto;
     background-color: #f6f6f6;
-    border-radius: 40px 40px 0 0;
+    border-radius: 40px;
     position: relative;
     top: 80px;    
 
@@ -66,51 +66,93 @@
         margin: auto;
 
         &:hover{
-            filter: brightness(1.2);
+            @include btn-hover;
         }
     }
 }
 
-.containeur-choix{
-    display: flex;
-    flex-direction: row;
-    border-radius: 30px;
-    background-color: $clr-white;
-    overflow: hidden;
-    margin: 20px 0;
-      
-    &-titre{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    padding: 10px;
-    }
-        
-    &-prix{
-    display: flex;
-    width: 50%;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    font-weight: bold;
-    }
-        
-    &-validate{
-    margin: -16px -120px -16px 70px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: .5s;   
-    color: $clr-white; 
-    background-color: $clr-tertiary;
-    }
-    
-    &:hover &-validate{
-        margin: 0 0 0 20px;
-        transition: 0.5s;
-        border-radius: 0 20px 20px 0;
+.containeur{
+
+    &-choix{
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+        background-color: $clr-white;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin: 20px 0;
+        animation: menu 2s;
+        animation-fill-mode: both;
         cursor: pointer;
-    }
+        box-shadow: $shadow;
     
+        
+        &-titre{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        padding: 20px;
+        }
+            
+        &-prix{
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: bold;
+        }
+            
+        &-validate{
+        margin: -16px -120px -16px 70px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .5s;   
+        color: $clr-white; 
+        background-color: $clr-tertiary;
+        }
+        
+        &:hover &-validate{
+            margin: 0 0 0 20px;
+            transition: 0.5s;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
+    }
+        &-1{
+            animation-delay: 0s;
+        }
+        &-2{
+            animation-delay: 0.3s;
+        }
+        &-3{
+            animation-delay: 0.6s;
+        }
+        &-4{
+            animation-delay: 0.9s;
+        }
+        &-5{
+            animation-delay: 1.2s;
+        }
+        &-6{
+            animation-delay: 1.5s;
+        }
+        &-7{
+            animation-delay: 1.8s;
+        }
+        &-8{
+            animation-delay: 2.1s;
+        }
+        &-9{
+            animation-delay: 2.4s;
+        }
+        &-10{
+            animation-delay: 2.7s;
+        }
+        &-2{
+            animation-delay: 0.2s;
+        }
 }

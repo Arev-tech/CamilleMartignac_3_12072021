@@ -1,0 +1,44 @@
+@keyframes ball{
+    0%{
+      transform: translate(0, 0);
+    }
+    50%{
+      transform: translate(0, -30px);
+    }
+    100%{
+      transform: translate(0, 0);
+    }
+}
+
+@keyframes loader{
+    0%{
+        opacity: 1;
+        background-color: $clr-white;
+    }
+    50%{
+        opacity: 1;
+        background-color: $clr-white
+    }
+    95%{
+        opacity: 0.8;
+        background-color: $clr-white;
+    }
+    97%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes menu{
+    0%{
+        transform: translate(0, 30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}

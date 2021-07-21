@@ -12,12 +12,12 @@
     justify-content: center;
     align-items: center;
     cursor: wait;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
     animation: loader 7.5s;
     animation-fill-mode: forwards;
     
@@ -32,39 +32,5 @@
     &-3{
       background-color: #99E2D0;
       animation-delay: 0.4s;
-    }
-}
-  
-@keyframes ball{
-    0%{
-      transform: translate(0, 0);
-    }
-    50%{
-      transform: translate(0, -30px);
-    }
-    100%{
-      transform: translate(0, 0);
-    }
-}
-
-@keyframes loader{
-    0%{
-        opacity: 1;
-        background-color: $clr-white;
-    }
-    50%{
-        opacity: 1;
-        background-color: $clr-white
-    }
-    95%{
-        opacity: 0.8;
-        background-color: $clr-white;
-    }
-    97%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 0;
-        visibility: hidden;
     }
 }

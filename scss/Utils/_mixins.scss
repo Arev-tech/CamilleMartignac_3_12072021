@@ -7,6 +7,7 @@
     right: 1%;
     top: 5%;
     cursor: pointer;
+    box-shadow: $shadow;
 }
 
 @mixin btn-hover{
@@ -50,10 +51,17 @@
 
 @mixin a-restaurants{
     color: black;
+    background-color: $clr-white;
     text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #0000002e;
 }
 
 @counter-style compteListe {
     system: numeric;
     symbols: "1" "2" "3";
-  }
+}
+
+@mixin coeur{
+    cursor: pointer;
+}
