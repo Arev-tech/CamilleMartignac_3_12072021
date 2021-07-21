@@ -141,24 +141,6 @@ h2, h1, h4, p {
 .menu > .titre > h1 {
   text-align: left;
 }
-.menu-btn {
-  margin: 20px;
-  color: #fff;
-  background: #9356DC;
-  border: none;
-  padding: 25px;
-  border-radius: 80px;
-  right: 1%;
-  top: 5%;
-  cursor: pointer;
-  box-shadow: 0 0 20px #0000002e;
-  background: linear-gradient(#FF79DA, #9356DC);
-  width: 50%;
-  margin: auto;
-}
-.menu-btn:hover {
-  filter: brightness(1.2);
-}
 
 .containeur-choix {
   display: flex;
@@ -260,23 +242,6 @@ header {
 }
 .speech > p {
   margin: 30px;
-}
-
-.btn {
-  text-align: center;
-  color: #fff;
-  background: #9356DC;
-  border: none;
-  padding: 25px;
-  border-radius: 80px;
-  right: 1%;
-  top: 5%;
-  cursor: pointer;
-  box-shadow: 0 0 20px #0000002e;
-  background: linear-gradient(#FF79DA, #9356DC);
-}
-.btn:hover {
-  filter: brightness(1.2);
 }
 
 .place {
@@ -509,6 +474,25 @@ footer {
 .loader-3 {
   background-color: #99E2D0;
   animation-delay: 0.4s;
+}
+
+.btn {
+  margin: 20px;
+  color: #fff;
+  background: #9356DC;
+  border: none;
+  padding: 25px;
+  border-radius: 80px;
+  right: 1%;
+  top: 5%;
+  cursor: pointer;
+  box-shadow: 0 0 20px #0000002e;
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 50%;
+  margin: auto;
+}
+.btn:hover {
+  filter: brightness(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */

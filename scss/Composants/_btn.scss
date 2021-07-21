@@ -1,0 +1,11 @@
+.btn{
+    margin: 20px;
+    @include btn-card;
+    @include degrade;
+    width: 50%;
+    margin: auto;
+
+    &:hover{
+        @include btn-hover;
+    }
+}
