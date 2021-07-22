@@ -3,7 +3,7 @@
     height: 30px;
     border-radius: 30px;
     margin: 30px;
-    animation: ball 1.5s 5;
+    animation: ball 1.5s 3;
 }
   
 .loader{
@@ -18,7 +18,7 @@
     top: 0;
     width: 100%;
     z-index: 9999;
-    animation: loader 7.5s;
+    animation: loader 5s;
     animation-fill-mode: forwards;
     
     &-1{

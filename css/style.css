@@ -113,13 +113,13 @@ h2, h1, h4, p {
 
 .menu {
   padding: 30px;
-  margin: 500px 0 100px 0;
+  margin: 500px 0 80px 0;
   display: flex;
   flex-direction: column;
   width: auto;
   height: auto;
   background-color: #f6f6f6;
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
   position: relative;
   top: 80px;
 }
@@ -128,12 +128,22 @@ h2, h1, h4, p {
   flex-direction: row;
   align-items: center;
 }
+@media (max-width: 1023px) {
+  .menu > .titre {
+    zoom: 150%;
+  }
+}
 .menu > .titre > h1 {
   text-align: left;
 }
 
+@media (max-width: 1023px) {
+  .containeur {
+    zoom: 150%;
+  }
+}
 .containeur > h2 {
-  margin: 20px;
+  margin: 20px 0;
 }
 .containeur-choix {
   display: flex;
@@ -141,7 +151,6 @@ h2, h1, h4, p {
   border-radius: 30px;
   background-color: #fff;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
   margin: 20px 0;
   animation: menu 2s;
@@ -150,15 +159,28 @@ h2, h1, h4, p {
   box-shadow: 0 0 20px #0000002e;
   transform: scale(1.015);
 }
+@media (max-width: 1023px) {
+  .containeur-choix {
+    zoom: 139%;
+  }
+}
 .containeur-choix-titre {
   display: flex;
-  width: 50%;
+  width: 80%;
   flex-direction: column;
   padding: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.containeur-choix-titre h4, .containeur-choix-titre p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .containeur-choix-prix {
   display: flex;
-  width: 50%;
+  width: 20%;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
@@ -355,7 +377,7 @@ ol {
   display: flex;
   flex-direction: column;
 }
-.card-un {
+.card_un {
   grid-area: 2/1/3/2;
   color: black;
   background-color: #fff;
@@ -363,7 +385,7 @@ ol {
   border-radius: 20px;
   box-shadow: 0 0 20px #0000002e;
 }
-.card-deux {
+.card_deux {
   grid-area: 2/2/3/3;
   color: black;
   background-color: #fff;
@@ -371,7 +393,7 @@ ol {
   border-radius: 20px;
   box-shadow: 0 0 20px #0000002e;
 }
-.card-trois {
+.card_trois {
   grid-area: 3/1/4/2;
   color: black;
   background-color: #fff;
@@ -379,7 +401,7 @@ ol {
   border-radius: 20px;
   box-shadow: 0 0 20px #0000002e;
 }
-.card-quatre {
+.card_quatre {
   grid-area: 3/2/4/3;
   color: black;
   background-color: #fff;
@@ -418,7 +440,6 @@ footer {
 
 .logo {
   font-family: "Shrikhand", "Roboto", sans-serif;
-  text-align: center;
 }
 
 @media screen and (max-width: 1023px) {
@@ -446,7 +467,7 @@ footer {
   height: 30px;
   border-radius: 30px;
   margin: 30px;
-  animation: ball 1.5s 5;
+  animation: ball 1.5s 3;
 }
 
 .loader {
@@ -461,7 +482,7 @@ footer {
   top: 0;
   width: 100%;
   z-index: 9999;
-  animation: loader 7.5s;
+  animation: loader 5s;
   animation-fill-mode: forwards;
 }
 .loader-1 {
