@@ -1,59 +1,73 @@
+ol{
+    counter-reset: compte;
+    margin: 0;
+}
+
 .fonctionnement{
 
-    @media screen and (min-width: 1024px){
-        display: flex;
-        flex-direction: row;
-        margin: 10px;
-        
-    }   
-    @media screen and (max-width: 1023px){
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction:column;
+    padding: 40px;
+
+    &-titre{
+        margin: 0 0 20px 0;
     }
 
-    > h2{
-        margin: $margin-fonctionnement-step;
-    }
-    
-    &-step{
+    &-card{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        counter-reset: compteListe;
 
-        @media screen and (max-width: 1023px){
-            width: 80%;
-            @include flexfonctionnement;
-            margin: $margin-fonctionnement-step;
-            padding: $padding-fonctionnement;
-            margin: auto;
-            margin-top: 30px;
+        @media (min-width:64rem) {
+            display: flex;
         }
+    }
 
-        @media screen and (min-width: 1024px){
-            width: 100%;
-            @include flexfonctionnement;
+    &-step{
+        padding: 1.5rem;
+        margin: 1rem 0 1rem 0.75rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+        border-radius: 1.25rem;
+        background-color: #f6f6f6;
+        display: flex;
+        position: relative;
+
+        @media (min-width:64rem) {
+            flex: 1;
+            margin: 0;
+            margin-left: 2rem;
         }
 
         .fas{
             @include icon-fct;
+            color: #7e7e7e;
         }
 
         >.fa-store{
             color: $clr-primary;
         }
+        
+        &:first-child{
+            @media (min-width: 64rem){
+                margin-left: .75rem;
+            }
+            margin-top: 0;
+        }
 
         &::before {
-            @media screen and (max-width: 1023px){
             counter-increment: compteListe 1;
             content: counter(compteListe) " ";
             background: $clr-primary;
-            height: 70px;
-            width: 70px;
+            height: 1.5rem;
+            width: 1.5rem;
             border-radius: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             position: absolute;
-            left: 75px;
-            }
+            left: -0.75rem;
         }
     }
 }
