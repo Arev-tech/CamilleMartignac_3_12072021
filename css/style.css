@@ -156,7 +156,7 @@ h2, h1, h4, p {
   animation: menu 2s;
   animation-fill-mode: both;
   cursor: pointer;
-  box-shadow: 0 0 20px #0000002e;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   transform: scale(1.015);
 }
 @media (max-width: 1023px) {
@@ -344,6 +344,7 @@ ol {
   color: white;
   position: absolute;
   left: -0.75rem;
+  top: 20px;
 }
 
 .restaurants {
@@ -504,7 +505,7 @@ footer {
   padding: 12px 24px;
   border-radius: 80px;
   cursor: pointer;
-  box-shadow: 0 0 20px #0000002e;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   background: linear-gradient(#FF79DA, #9356DC);
   width: 30%;
   margin: auto;
@@ -512,20 +513,21 @@ footer {
   font-size: 18px;
 }
 .btn-commander {
-  width: 20%;
   color: #fff;
   border: none;
   padding: 12px 24px;
   border-radius: 80px;
   cursor: pointer;
-  box-shadow: 0 0 20px #0000002e;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   background: linear-gradient(#FF79DA, #9356DC);
+  width: 20%;
   margin: auto;
   font-weight: 500;
   font-size: 18px;
 }
 .btn:hover {
   filter: brightness(1.1);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .card-txt-coeur {
