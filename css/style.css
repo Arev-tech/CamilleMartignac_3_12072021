@@ -55,6 +55,11 @@
 h1 {
   font-family: "Shrikhand", "Roboto", sans-serif;
 }
+@media (max-width: 1023px) {
+  h1 {
+    zoom: 150%;
+  }
+}
 
 body, html, button {
   font-family: "Roboto", sans-serif;
@@ -91,19 +96,47 @@ h2, h1, h4, p {
   width: 42%;
   display: flex;
   align-items: center;
-  font-size: 30px;
   margin: 0 0 0 30px;
 }
+@media (min-width: 1024px) {
+  .headermenu .fa-arrow-left {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .headermenu .fa-arrow-left {
+    font-size: 50px;
+  }
+}
 .headermenu h1 {
-  width: 58%;
+  width: 50%;
   display: flex;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .headermenu h1 {
+    width: 50%;
+  }
+}
+@media (max-width: 1023px) {
+  .headermenu h1 {
+    width: 90%;
+  }
 }
 
 .photo-restaurant {
   position: absolute;
-  top: 85px;
   height: auto;
+}
+@media (min-width: 1024px) {
+  .photo-restaurant {
+    top: 85px;
+  }
+}
+@media (max-width: 1023px) {
+  .photo-restaurant {
+    top: 130px;
+  }
 }
 .photo-restaurant-menu {
   width: 100%;
@@ -237,6 +270,11 @@ h1 {
   width: 100%;
   text-align: center;
   padding: 20px 0;
+}
+@media (max-width: 767px) {
+  h1 {
+    padding: 30px 0;
+  }
 }
 
 header {
