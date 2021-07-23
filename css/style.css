@@ -446,6 +446,11 @@ footer {
 .logo {
   font-family: "Shrikhand", "Roboto", sans-serif;
 }
+@media screen and (min-width: 1024px) {
+  .logo {
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 1023px) {
   .footer {
@@ -457,9 +462,11 @@ footer {
 @media screen and (min-width: 1024px) {
   .footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
+    line-height: 200%;
   }
 }
 .footer > a {
@@ -541,13 +548,13 @@ footer {
   cursor: pointer;
   font-size: 30px;
 }
-.card-txt-coeur .fas {
-  display: none;
-}
 @media screen and (min-width: 1024px) {
   .card-txt-coeur {
-    zoom: 150%;
+    zoom: 110%;
   }
+}
+.card-txt-coeur .fas {
+  display: none;
 }
 .card-txt-coeur:hover, .card-txt-coeur:active {
   animation: opacityOn 0.5s ease-in-out;
