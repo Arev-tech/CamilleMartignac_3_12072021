@@ -79,6 +79,11 @@ body {
   width: 100%;
   height: auto;
 }
+@media (max-width: 1023px) {
+  body {
+    zoom: 150%;
+  }
+}
 
 h2, h1, h4, p {
   margin: 0;
@@ -586,12 +591,12 @@ footer {
 .btn {
   color: #fff;
   border: none;
-  padding: 12px 24px;
+  padding: 16px 24px;
   border-radius: 80px;
   cursor: pointer;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   background: linear-gradient(#FF79DA, #9356DC);
-  width: 30%;
+  width: auto;
   margin: auto;
   font-weight: 500;
   font-size: 18px;
@@ -599,7 +604,7 @@ footer {
 .btn-commander {
   color: #fff;
   border: none;
-  padding: 12px 24px;
+  padding: 16px 24px;
   border-radius: 80px;
   cursor: pointer;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
