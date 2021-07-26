@@ -193,6 +193,10 @@ h2, h1, h4, p {
 }
 .containeur > h2 {
   margin: 20px 0;
+  font-weight: lighter;
+  width: 60px;
+  font-weight: lighter;
+  border-bottom: solid 4px #99E2D0;
 }
 .containeur-choix {
   display: flex;
