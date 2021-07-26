@@ -15,22 +15,6 @@
     }
 }
 
-.nouveau{
-    display: flex;
-    background-color: #5CE398;
-    border-radius: 3px;
-    width: 100px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    color: #0A8E45;
-    font-weight: bold;
-    position: absolute;
-    bottom: 400px;
-    left: 500px;
-    z-index: 3;
-}
-
 .card{
     width: 100%;
     margin: 10px 0 10px 0;
@@ -103,5 +87,6 @@
         top: 20px;
         right: 20px;
         z-index: 3;
+        animation: nouveau 2s ease-in-out infinite;
     }
-}  
+}
