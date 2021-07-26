@@ -172,6 +172,11 @@ h2, h1, h4, p {
   position: relative;
   top: 80px;
 }
+@media (min-width: 767px) and (max-width: 1023px) {
+  .menu {
+    margin: 300px 0 80px 0;
+  }
+}
 .menu > .titre {
   display: flex;
   flex-direction: row;
@@ -609,7 +614,7 @@ footer {
   cursor: pointer;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   background: linear-gradient(#FF79DA, #9356DC);
-  width: 20%;
+  width: auto;
   margin: auto;
   font-weight: 500;
   font-size: 18px;
