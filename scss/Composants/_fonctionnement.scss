@@ -17,8 +17,8 @@ ol{
     }
 
     &-card{
-        margin: 0;
-        padding: 0;
+        margin: $no-margin;
+        padding: $no-padding;
         list-style: none;
         counter-reset: compteListe;
 
@@ -28,10 +28,10 @@ ol{
     }
 
     &-step{
-        padding: 1.5rem;
-        margin: 1rem 0 1rem 0.75rem;
+        padding: 24px;
+        margin: 16px 0 16px 12px;
         box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-        border-radius: 1.25rem;
+        border-radius: 20px;
         background-color: #f6f6f6;
         display: flex;
         position: relative;
@@ -52,25 +52,25 @@ ol{
         }
         
         &:first-child{
-            @media (min-width: 64rem){
-                margin-left: .75rem;
+            @media (min-width: 1024px){
+                margin-left: 12px;
             }
-            margin-top: 0;
+            margin-top: $no-margin;
         }
 
         &::before {
             counter-increment: compteListe 1;
             content: counter(compteListe) " ";
             background: $clr-primary;
-            height: 1.5rem;
-            width: 1.5rem;
+            height: 24px;
+            width: 24px;
             border-radius: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             position: absolute;
-            left: -0.75rem;
+            left: -12px;
             top: 20px;
         }
     }

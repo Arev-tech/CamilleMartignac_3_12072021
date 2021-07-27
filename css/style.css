@@ -358,8 +358,8 @@ ol {
   margin: 0 0 20px 0;
 }
 .fonctionnement-card {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
   counter-reset: compteListe;
 }
@@ -369,10 +369,10 @@ ol {
   }
 }
 .fonctionnement-step {
-  padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
+  padding: 24px;
+  margin: 16px 0 16px 12px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-  border-radius: 1.25rem;
+  border-radius: 20px;
   background-color: #f6f6f6;
   display: flex;
   position: relative;
@@ -392,26 +392,26 @@ ol {
   color: #9356DC;
 }
 .fonctionnement-step:first-child {
-  margin-top: 0;
+  margin-top: 0px;
 }
-@media (min-width: 64rem) {
+@media (min-width: 1024px) {
   .fonctionnement-step:first-child {
-    margin-left: 0.75rem;
+    margin-left: 12px;
   }
 }
 .fonctionnement-step::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: #9356DC;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 24px;
+  width: 24px;
   border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   position: absolute;
-  left: -0.75rem;
+  left: -12px;
   top: 20px;
 }
 
