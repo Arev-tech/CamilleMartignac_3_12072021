@@ -33,4 +33,10 @@ footer{
     > a{
         @include a-footer;
     }
+
+    &-logo{
+        width: 15px;
+        height: 15px;
+        margin: 0 10px 0 0;
+    }
 }

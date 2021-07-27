@@ -95,7 +95,7 @@
     &-choix{
         display: flex;
         flex-direction: row;
-        border-radius: 30px;
+        border-radius: 20px;
         background-color: $clr-white;
         white-space: nowrap;
         overflow: hidden;
@@ -114,7 +114,7 @@
         display: flex;
         width: 80%;
         flex-direction: column;
-        padding: 20px;
+        padding: 15px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

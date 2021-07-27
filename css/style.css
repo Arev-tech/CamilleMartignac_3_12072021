@@ -92,7 +92,7 @@ body {
 }
 @media (max-width: 1023px) {
   body {
-    zoom: 150%;
+    zoom: 120%;
   }
 }
 
@@ -112,7 +112,7 @@ h2, h1, h4, p {
   width: 42%;
   display: flex;
   align-items: center;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 40px;
 }
 @media (min-width: 1024px) {
   .headermenu .fa-arrow-left {
@@ -206,7 +206,7 @@ h2, h1, h4, p {
 .containeur-choix {
   display: flex;
   flex-direction: row;
-  border-radius: 30px;
+  border-radius: 20px;
   background-color: #fff;
   white-space: nowrap;
   overflow: hidden;
@@ -226,7 +226,7 @@ h2, h1, h4, p {
   display: flex;
   width: 80%;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -298,7 +298,7 @@ h1 {
 }
 @media (max-width: 767px) {
   h1 {
-    padding: 30px 0;
+    padding: 25px 0;
   }
 }
 
@@ -311,7 +311,7 @@ header {
 .speech {
   text-align: center;
   background-color: #fafafa;
-  padding: 30px;
+  padding: 30px 0 60px 0;
 }
 .speech > p {
   margin: 24px 0;
@@ -348,6 +348,11 @@ ol {
   display: flex;
   flex-direction: column;
   padding: 40px;
+}
+@media (max-width: 1023px) {
+  .fonctionnement {
+    zoom: 130%;
+  }
 }
 .fonctionnement-titre {
   margin: 0 0 20px 0;
@@ -485,7 +490,7 @@ ol {
 .card-img {
   border-radius: 20px 20px 0px 0px;
   width: 100%;
-  height: 350px;
+  height: 300px;
   object-fit: cover;
   position: relative;
   z-index: 2;
@@ -503,13 +508,13 @@ ol {
 }
 .card-nouveau {
   display: flex;
-  background-color: #5CE398;
+  background-color: #99E2D0;
   border-radius: 3px;
   width: 100px;
   height: 30px;
   justify-content: center;
   align-items: center;
-  color: #0A8E45;
+  color: #008766;
   font-weight: bold;
   position: absolute;
   top: 20px;
@@ -556,6 +561,11 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+.footer-logo {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px 0 0;
+}
 
 .loader-1, .loader-2, .loader-3 {
   width: 30px;
@@ -599,7 +609,7 @@ footer {
   padding: 16px 24px;
   border-radius: 80px;
   cursor: pointer;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 0rem 0.7rem rgba(0, 0, 0, 0.4);
   background: linear-gradient(#FF79DA, #9356DC);
   width: auto;
   margin: auto;
@@ -612,7 +622,7 @@ footer {
   padding: 16px 24px;
   border-radius: 80px;
   cursor: pointer;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 0rem 0.7rem rgba(0, 0, 0, 0.4);
   background: linear-gradient(#FF79DA, #9356DC);
   width: auto;
   margin: auto;

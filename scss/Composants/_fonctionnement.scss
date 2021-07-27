@@ -8,6 +8,9 @@ ol{
     display: flex;
     flex-direction:column;
     padding: 40px;
+    @media (max-width: 1023px){
+        zoom: 130%;
+    }
 
     &-titre{
         margin: 0 0 20px 0;
