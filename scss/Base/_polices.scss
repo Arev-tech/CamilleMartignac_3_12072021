@@ -9,8 +9,12 @@ body, html, button {
   font-family: 'Roboto', sans-serif;
 }
 
-
-
 span{
   font-weight: bold;
+}
+
+.page{
+  @media (max-width: 767px){
+    zoom: 200%;
+  }
 }

@@ -4,6 +4,9 @@ footer{
     color: $clr-white;
     height: auto;
     padding: $margin-fonctionnement-step;
+    @media (max-width: 1023px){
+        zoom: 250%;
+    }
 }
 
 .logo{

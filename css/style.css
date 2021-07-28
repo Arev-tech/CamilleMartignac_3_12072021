@@ -80,6 +80,12 @@ span {
   font-weight: bold;
 }
 
+@media (max-width: 767px) {
+  .page {
+    zoom: 200%;
+  }
+}
+
 html {
   width: auto;
   height: auto;
@@ -89,11 +95,6 @@ body {
   margin: 0;
   width: 100%;
   height: auto;
-}
-@media (max-width: 1023px) {
-  body {
-    zoom: 120%;
-  }
 }
 
 h2, h1, h4, p {
@@ -151,7 +152,7 @@ h2, h1, h4, p {
 }
 @media (max-width: 1023px) {
   .photo-restaurant {
-    top: 130px;
+    top: 160px;
   }
 }
 .photo-restaurant-menu {
@@ -301,6 +302,11 @@ h1 {
     padding: 25px 0;
   }
 }
+@media (max-width: 1023px) {
+  h1 {
+    zoom: 200%;
+  }
+}
 
 header {
   margin-bottom: 10px;
@@ -312,6 +318,11 @@ header {
   text-align: center;
   background-color: #fafafa;
   padding: 30px 0 60px 0;
+}
+@media (max-width: 1023px) {
+  .speech {
+    zoom: 300%;
+  }
 }
 .speech > p {
   margin: 24px 0;
@@ -326,6 +337,11 @@ header {
   background-color: #f3f3f3;
   font-size: 19px;
   position: relative;
+}
+@media (max-width: 1023px) {
+  .place {
+    zoom: 200%;
+  }
 }
 .place .fas {
   font-size: 26px;
@@ -349,13 +365,13 @@ ol {
   flex-direction: column;
   padding: 40px;
 }
-@media (max-width: 1023px) {
-  .fonctionnement {
-    zoom: 130%;
-  }
-}
 .fonctionnement-titre {
   margin: 0 0 20px 0;
+}
+@media (max-width: 1023px) {
+  .fonctionnement-titre {
+    zoom: 300%;
+  }
 }
 .fonctionnement-card {
   margin: 0px;
@@ -363,7 +379,7 @@ ol {
   list-style: none;
   counter-reset: compteListe;
 }
-@media (min-width: 64rem) {
+@media (min-width: 1024px) {
   .fonctionnement-card {
     display: flex;
   }
@@ -377,7 +393,12 @@ ol {
   display: flex;
   position: relative;
 }
-@media (min-width: 64rem) {
+@media (max-width: 1023px) {
+  .fonctionnement-step {
+    zoom: 300%;
+  }
+}
+@media (min-width: 1024px) {
   .fonctionnement-step {
     flex: 1;
     margin: 0;
@@ -433,6 +454,7 @@ ol {
     /* pour les telephones  et tablettes */
     display: flex;
     flex-direction: column;
+    zoom: 200%;
   }
 }
 
@@ -487,6 +509,11 @@ ol {
 .card-titre {
   grid-area: 1/1/2/3;
 }
+@media (max-width: 1023px) {
+  .card-titre {
+    zoom: 150%;
+  }
+}
 .card-img {
   border-radius: 20px 20px 0px 0px;
   width: 100%;
@@ -502,6 +529,11 @@ ol {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .card-txt {
+    zoom: 130%;
+  }
 }
 .card-txt h3 {
   margin: 0 0 5px 0;
@@ -529,6 +561,11 @@ footer {
   color: #fff;
   height: auto;
   padding: 24px;
+}
+@media (max-width: 1023px) {
+  footer {
+    zoom: 250%;
+  }
 }
 
 .logo {
@@ -628,6 +665,11 @@ footer {
   margin: auto;
   font-weight: 500;
   font-size: 18px;
+}
+@media (max-width: 1023px) {
+  .btn-commander {
+    zoom: 170%;
+  }
 }
 .btn:hover {
   filter: brightness(1.1);

@@ -4,16 +4,15 @@ ol{
 }
 
 .fonctionnement{
-
     display: flex;
     flex-direction:column;
     padding: 40px;
-    @media (max-width: 1023px){
-        zoom: 130%;
-    }
 
     &-titre{
         margin: 0 0 20px 0;
+        @media (max-width: 1023px){
+            zoom: 300%;
+        }
     }
 
     &-card{
@@ -21,8 +20,7 @@ ol{
         padding: $no-padding;
         list-style: none;
         counter-reset: compteListe;
-
-        @media (min-width:64rem) {
+        @media (min-width:1024px) {
             display: flex;
         }
     }
@@ -35,8 +33,11 @@ ol{
         background-color: #f6f6f6;
         display: flex;
         position: relative;
+        @media (max-width: 1023px){
+            zoom: 300%;
+        }
 
-        @media (min-width:64rem) {
+        @media (min-width:1024px) {
             flex: 1;
             margin: 0;
             margin-left: 2rem;

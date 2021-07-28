@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     background-color: #f6f6f6;
 
+
     @media (min-width: 1024px){ /* pour les ordis */
         display: grid;
         grid-template-columns: 49% 49%;
@@ -12,6 +13,7 @@
     @media (max-width: 1023px){ /* pour les telephones  et tablettes */
         display: flex;
         flex-direction: column;
+        zoom: 200%;
     }
 }
 
@@ -50,6 +52,9 @@
 
     &-titre{
         grid-area: 1 / 1 / 2 / 3;
+        @media (max-width: 1023px){
+            zoom: 150%;
+        }
     }
 
     &-img{
@@ -68,6 +73,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: 1023px){
+            zoom: 130%;
+        }
 
         h3{
             margin: 0 0 5px 0;

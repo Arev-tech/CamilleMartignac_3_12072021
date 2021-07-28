@@ -4,6 +4,9 @@ h1{
     @media (max-width: 767px){
         padding: 25px 0;
     }
+    @media (max-width: 1023px){
+        zoom: 200%;
+    }
 }
 
 header{
