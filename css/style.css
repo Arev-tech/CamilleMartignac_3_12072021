@@ -72,6 +72,10 @@ h1 {
   }
 }
 
+h2 {
+  font-family: "Shrikhand", "Roboto", sans-serif;
+}
+
 body, html, button {
   font-family: "Roboto", sans-serif;
 }
@@ -355,15 +359,12 @@ header {
   font-size: 26px;
 }
 
-ol {
-  counter-reset: compte;
-  margin: 0;
-}
-
 .fonctionnement {
   display: flex;
   flex-direction: column;
   padding: 40px;
+  counter-reset: compte;
+  margin: 0;
 }
 .fonctionnement-titre {
   margin: 0 0 20px 0;

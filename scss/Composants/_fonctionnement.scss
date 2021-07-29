@@ -1,12 +1,9 @@
-ol{
-    counter-reset: compte;
-    margin: 0;
-}
-
 .fonctionnement{
     display: flex;
     flex-direction:column;
     padding: 40px;
+    counter-reset: compte;
+    margin: 0;
 
     &-titre{
         margin: 0 0 20px 0;
