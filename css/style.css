@@ -96,7 +96,7 @@ span {
 }
 
 html {
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -350,7 +350,7 @@ header {
 .place {
   display: flex;
   justify-content: center;
-  padding: 20px 0px 20px 150px;
+  padding: 20px 10px;
   background-color: #f3f3f3;
   font-size: 19px;
   position: relative;
@@ -359,6 +359,11 @@ header {
   .place {
     zoom: 200%;
   }
+}
+.place-containeur {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .place .fas {
   font-size: 26px;
@@ -369,6 +374,7 @@ header {
   background-color: #f3f3f3;
   font-weight: 600;
   font-size: 26px;
+  width: 60%;
 }
 .place input::placeholder {
   color: black;

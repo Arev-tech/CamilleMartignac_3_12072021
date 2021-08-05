@@ -1,12 +1,19 @@
 .place{
     display: flex;
     justify-content: center;
-    padding: 20px 0px 20px 150px;
+    padding: 20px 10px;
     background-color: #f3f3f3;
     font-size: 19px;
     position: relative;
     @media (max-width: 1023px){
         zoom: 200%;
+    }
+
+    &-containeur{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
     }
     
     .fas{
@@ -19,6 +26,7 @@
         background-color: #f3f3f3;
         font-weight: 600;
         font-size: 26px;
+        width: 60%;
         
 
         &::placeholder{
