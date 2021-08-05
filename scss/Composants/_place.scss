@@ -5,9 +5,7 @@
     background-color: #f3f3f3;
     font-size: 19px;
     position: relative;
-    @media (max-width: 1023px){
-        zoom: 200%;
-    }
+    
 
     &-containeur{
         display: flex;

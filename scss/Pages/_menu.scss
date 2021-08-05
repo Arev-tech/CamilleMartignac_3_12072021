@@ -7,7 +7,7 @@
     
 
     .fa-arrow-left{
-        width: 42%;
+        width: 0%;
         display: flex;
         align-items: center;
         @media (min-width: 1024px){
@@ -21,13 +21,13 @@
 
     h1{
         @media (min-width: 1024px){
-            width: 50%;
+            width: 100%;
         }
         @media (max-width: 1023px){
             width: 90%;
         }
-        width: 50%;
         display: flex;
+        justify-content: center;
         text-align: center;
     }
 }
@@ -52,7 +52,9 @@
 
 .menu{
     padding: 30px;
-    margin: 500px 0 80px 0;
+    @media screen and (min-width: 767px){
+        margin: 400px 0 80px 0;
+    }
     display: flex;
     flex-direction: column;
     width: auto;
@@ -61,8 +63,8 @@
     border-radius: 40px 40px 0 0;
     position: relative;
     top: 80px;
-    @media (min-width: 767px) and (max-width: 1023px){
-        margin: 300px 0 80px 0;
+    @media screen and (max-width:319px){
+        margin: 0px;
     }
 
     >.titre{
