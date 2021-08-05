@@ -44,10 +44,6 @@
             @include icon-fct;
             color: #7e7e7e;
         }
-
-        >.fa-store{
-            color: $clr-primary;
-        }
         
         &:first-child{
             @media (min-width: 1024px){
@@ -70,6 +66,15 @@
             position: absolute;
             left: -12px;
             top: 20px;
+        }
+
+        &:hover{
+            background-color: #e4d5f6;
+            cursor: pointer;
+
+            .fas{
+                color: $clr-primary;
+            }
         }
     }
 }
