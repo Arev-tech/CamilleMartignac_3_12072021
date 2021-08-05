@@ -350,7 +350,7 @@ header {
 .place {
   display: flex;
   justify-content: center;
-  padding: 20px 16px;
+  padding: 20px 0px 20px 150px;
   background-color: #f3f3f3;
   font-size: 19px;
   position: relative;
@@ -364,12 +364,14 @@ header {
   font-size: 26px;
   margin-right: 10px;
 }
-.place span {
+.place input {
   border: none;
   background-color: #f3f3f3;
   font-weight: 600;
-  padding-left: 20px;
   font-size: 26px;
+}
+.place input::placeholder {
+  color: black;
 }
 
 .fonctionnement {
