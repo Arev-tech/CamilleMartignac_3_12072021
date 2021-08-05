@@ -7,9 +7,6 @@
 
     &-titre{
         margin: 0 0 20px 0;
-        @media (max-width: 1023px){
-            zoom: 300%;
-        }
     }
 
     &-card{
@@ -30,9 +27,9 @@
         background-color: #f6f6f6;
         display: flex;
         position: relative;
-        @media (max-width: 1023px){
-            zoom: 300%;
-        }
+        text-overflow: hidden;
+        flex-wrap: nowrap;
+        
 
         @media (min-width:1024px) {
             flex: 1;

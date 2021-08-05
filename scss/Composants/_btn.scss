@@ -1,15 +1,16 @@
 .btn{
     @include btn-card;
     @include degrade;
-    width: auto;
     margin: auto;
+    overflow: hidden;
     font-weight: 500;
     font-size: $size-btn;
+
 
     &-commander{
         @include btn-card;
         @include degrade;
-        width: auto;
+        width: 100%;
         margin: auto;
         font-weight: 500;
         font-size: $size-btn;

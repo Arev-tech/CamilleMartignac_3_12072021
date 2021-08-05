@@ -108,6 +108,8 @@ body {
 
 h2, h1, h4, p {
   margin: 0;
+  text-overflow: hidden;
+  flex-wrap: nowrap;
 }
 
 .headermenu {
@@ -342,7 +344,7 @@ header {
 }
 @media (max-width: 1023px) {
   .speech {
-    zoom: 300%;
+    zoom: 200%;
   }
 }
 .speech > p {
@@ -389,11 +391,6 @@ header {
 .fonctionnement-titre {
   margin: 0 0 20px 0;
 }
-@media (max-width: 1023px) {
-  .fonctionnement-titre {
-    zoom: 300%;
-  }
-}
 .fonctionnement-card {
   margin: 0px;
   padding: 0px;
@@ -413,11 +410,8 @@ header {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
-}
-@media (max-width: 1023px) {
-  .fonctionnement-step {
-    zoom: 300%;
-  }
+  text-overflow: hidden;
+  flex-wrap: nowrap;
 }
 @media (min-width: 1024px) {
   .fonctionnement-step {
@@ -479,7 +473,6 @@ header {
     /* pour les telephones  et tablettes */
     display: flex;
     flex-direction: column;
-    zoom: 200%;
   }
 }
 
@@ -672,25 +665,25 @@ footer {
 .btn {
   color: #fff;
   border: none;
-  padding: 16px 24px;
+  padding: 16px 18px;
   border-radius: 80px;
   cursor: pointer;
   box-shadow: 0rem 0rem 0.7rem rgba(0, 0, 0, 0.4);
   background: linear-gradient(#FF79DA, #9356DC);
-  width: auto;
   margin: auto;
+  overflow: hidden;
   font-weight: 500;
   font-size: 18px;
 }
 .btn-commander {
   color: #fff;
   border: none;
-  padding: 16px 24px;
+  padding: 16px 18px;
   border-radius: 80px;
   cursor: pointer;
   box-shadow: 0rem 0rem 0.7rem rgba(0, 0, 0, 0.4);
   background: linear-gradient(#FF79DA, #9356DC);
-  width: auto;
+  width: 100%;
   margin: auto;
   font-weight: 500;
   font-size: 18px;

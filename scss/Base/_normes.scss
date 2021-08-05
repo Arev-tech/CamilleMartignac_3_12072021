@@ -11,4 +11,6 @@ body{
 
 h2, h1, h4, p{
     margin: 0;
+    text-overflow: hidden;
+    flex-wrap: nowrap;
 }
