@@ -683,7 +683,7 @@ footer {
   cursor: pointer;
   box-shadow: 0rem 0rem 0.7rem rgba(0, 0, 0, 0.4);
   background: linear-gradient(#FF79DA, #9356DC);
-  width: 100%;
+  width: auto;
   margin: auto;
   font-weight: 500;
   font-size: 18px;

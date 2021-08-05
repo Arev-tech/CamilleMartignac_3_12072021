@@ -10,7 +10,7 @@
     &-commander{
         @include btn-card;
         @include degrade;
-        width: 100%;
+        width: auto;
         margin: auto;
         font-weight: 500;
         font-size: $size-btn;
