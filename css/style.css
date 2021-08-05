@@ -242,10 +242,17 @@ h2, h1, h4, p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.containeur-choix-titre h4, .containeur-choix-titre p {
+.containeur-choix-titre h2, .containeur-choix-titre h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.containeur-choix-titre h2 {
+  margin: 10px 0;
+}
+.containeur-choix-titre h3 {
+  margin: 5px 0;
+  font-weight: 200;
 }
 .containeur-choix-prix {
   display: flex;
@@ -542,8 +549,12 @@ header {
     zoom: 130%;
   }
 }
+.card-txt h2 {
+  margin: 10px 0;
+}
 .card-txt h3 {
-  margin: 0 0 5px 0;
+  margin: 5px 0;
+  font-weight: 200;
 }
 .card-nouveau {
   display: flex;
