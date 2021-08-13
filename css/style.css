@@ -66,19 +66,9 @@
 h1 {
   font-family: "Shrikhand", "Roboto", sans-serif;
 }
-@media (max-width: 1023px) {
-  h1 {
-    zoom: 150%;
-  }
-}
 
 .titre {
   font-family: "Shrikhand", "Roboto", sans-serif;
-}
-@media (max-width: 1023px) {
-  .titre {
-    font-size: 22px;
-  }
 }
 
 body, html, button {
@@ -87,12 +77,6 @@ body, html, button {
 
 span {
   font-weight: bold;
-}
-
-@media (max-width: 767px) {
-  .page {
-    zoom: 200%;
-  }
 }
 
 html {
@@ -342,11 +326,6 @@ header {
   background-color: #fafafa;
   padding: 30px 0 60px 0;
 }
-@media (max-width: 1023px) {
-  .speech {
-    zoom: 200%;
-  }
-}
 .speech > p {
   margin: 24px 0;
   font-weight: 100;
@@ -403,6 +382,7 @@ header {
   }
 }
 .fonctionnement-step {
+  width: auto;
   padding: 24px;
   margin: 16px 0 16px 12px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -583,11 +563,6 @@ footer {
   color: #fff;
   height: auto;
   padding: 24px;
-}
-@media (max-width: 1023px) {
-  footer {
-    zoom: 250%;
-  }
 }
 
 .logo {

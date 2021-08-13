@@ -1,15 +1,9 @@
 h1{
   font-family: 'Shrikhand', 'Roboto', sans-serif;
-  @media (max-width: 1023px){
-    zoom: 150%;
-  }
 }
 
 .titre{
   font-family:'Shrikhand', 'Roboto', sans-serif;
-  @media (max-width: 1023px){
-    font-size: 22px;
-  }
 }
 
 body, html, button {
@@ -18,10 +12,4 @@ body, html, button {
 
 span{
   font-weight: bold;
-}
-
-.page{
-  @media (max-width: 767px){
-    zoom: 200%;
-  }
 }
